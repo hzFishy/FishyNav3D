@@ -1474,14 +1474,6 @@ void ANav3DData::Analyse() const
 				continue;
 			}
 
-			// Landscapes are always kept
-			if (Prim->IsA<ULandscapeHeightfieldCollisionComponent>() || Prim->IsA<ULandscapeMeshCollisionComponent>())
-			{
-				KeptLandscape++;
-				Kept++;
-				continue;
-			}
-
 			// ISM handling: require collision enabled, instances present, and body setup geometry
 			if (const UInstancedStaticMeshComponent* ISM = Cast<UInstancedStaticMeshComponent>(Prim))
 			{
