@@ -4,7 +4,7 @@
 #include "Pathfinding/Core/INav3DPathfinder.h"
 #include "Nav3DVolumeNavigationData.h"
 
-// ReSharper disable once CppUE4CodingStandardNamingViolationWarning
+
 class NAV3D_API FNav3DAStar : public INav3DPathfinder
 {
 public:
