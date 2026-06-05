@@ -11,34 +11,29 @@ public class Nav3D : ModuleRules
 		
 		// Enable strict validation to catch issues like missing Category specifiers
 		bTreatAsEngineModule = true; // Treat plugin as Engine module for stricter validation
-
-
+		
 		PublicIncludePaths.AddRange(
 			new string[]
 			{
 				ModuleDirectory + "/../ThirdParty"
 			}
 		);
-
-
+		
 		PrivateIncludePaths.AddRange(
 			new[]
 			{
 				"Nav3D/Private"
-				// ... add other private include paths required here ...
 			}
 		);
-
-
+		
 		PublicDependencyModuleNames.AddRange(
 			new[]
 			{
-				"Core", "AIModule"
-				// ... add other public dependencies that you statically link with here ...
+				"Core", "AIModule", 
+				"FishyUtils"
 			}
 		);
-
-
+		
 		PrivateDependencyModuleNames.AddRange(
 			new[]
 			{
@@ -56,16 +51,10 @@ public class Nav3D : ModuleRules
 				"InputCore",
 			}
 		);
-
-
-		DynamicallyLoadedModuleNames.AddRange(
-			new string[]
-			{
-				// ... add any modules that your module loads dynamically here ...
-			}
-		);
-
+		
 		if (Target.bBuildEditor)
+		{
 			PublicDependencyModuleNames.Add("UnrealEd");
+		}
 	}
 }

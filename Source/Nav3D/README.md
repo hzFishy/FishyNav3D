@@ -1,3 +1,8 @@
+# hzFishy Fork
+
+Added dependency: [FishyUtils](https://github.com/hzFishy/FishyUtils)
+
+
 # Nav3D - 3D Navigation Plugin for Unreal Engine 5
 
 ![Nav3D banner image](https://user-images.githubusercontent.com/891532/103788146-6cdfe280-5036-11eb-883f-c9bf174b4ec2.jpg)
