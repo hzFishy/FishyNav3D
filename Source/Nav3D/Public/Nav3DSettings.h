@@ -61,7 +61,7 @@ public:
 	bool bEnableAutomaticVolumePartitioning = true;
 	
 	UPROPERTY(EditAnywhere, config, Category="Volume Partitioning",
-	          meta=(EditCondition="bEnableAutomaticVolumePartitioning", ClampMin="50000", ClampMax="1000000"))
+	          meta=(EditCondition="bEnableAutomaticVolumePartitioning", ClampMin="100", ClampMax="1000000"))
 	float MaxVolumePartitionSize = 250000.0f; // 2.5km
 	
 	UPROPERTY(EditAnywhere, config, Category="Volume Partitioning",
